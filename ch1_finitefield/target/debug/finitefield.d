@@ -1,1 +1,1 @@
-/mnt/c/Users/jeong/bitcoin-rs/finitefield/target/debug/finitefield: /mnt/c/Users/jeong/bitcoin-rs/finitefield/src/main.rs
+/mnt/c/Users/jeong/SKKRYPTO-programmingbitcoin-rust/ch1_finitefield/target/debug/finitefield: /mnt/c/Users/jeong/SKKRYPTO-programmingbitcoin-rust/ch1_finitefield/src/main.rs

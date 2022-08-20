@@ -1,7 +1,7 @@
 //extern crate num;
 
-use std::intrinsics::powif32;
-use std::intrinsics::powif64;
+//use std::intrinsics::powif32;
+//use std::intrinsics::powif64;
 use std::ops::*;
 use num::pow;
 use num::One;
@@ -81,26 +81,28 @@ impl One for FieldElement {
     }
 }
 
-impl FieldElement {
-    fn pow2(&self, exp: i32) -> Self {
-        if exp > 0 {
-            Self {
-                num: pow(self.num, exp),
-                prime: self.prime
-            }
-        }
-        else {
-            Self {
-                num: pow(&self, exp),
-                prime: self.prime
-            }
-        }
-    }
-}
+// impl FieldElement {
+//     fn pow2(&self, exp: i32) -> Self {
+//         if exp > 0 {
+//             Self {
+//                 num: pow(self.num, exp),
+//                 prime: self.prime
+//             }
+//         }
+//         else {
+//             Self {
+//                 num: pow(&self, exp),
+//                 prime: self.prime
+//             }
+//         }
+//     }
+// }
 
 fn main() {
     let a = FieldElement{num: 2, prime: 31};
     let b = FieldElement{num: 19, prime: 31};
+    println!("{:#?}", a + b);
+    println!("{:#?}", a - b);
     println!("{:#?}", a * b);
     println!("{:#?}", pow(a, 3));
 }
